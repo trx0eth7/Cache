@@ -25,4 +25,8 @@ public abstract class DataController<T extends Data> {
         dataDAO.delete(data);
     }
 
+    public Settings getSettings(){
+        return dataDAO.getSettings();
+    }
+
 }
