@@ -7,6 +7,11 @@ import com.trx0eth7.model.Data;
 public abstract class DataController<T extends Data> {
     private AbstractDao<T> dataDAO;
 
+
+    public DataController(AbstractDao<T> dataDAO) {
+        this.dataDAO = dataDAO;
+    }
+
     public Data getDataById(Long id){
         return dataDAO.findById(id);
     }
