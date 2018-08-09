@@ -1,19 +1,17 @@
-package com.trx0eth7;
+package com.trx0eth7.server.controller.dao;
 
-import com.trx0eth7.server.controller.Settings;
-import com.trx0eth7.server.controller.dao.AbstractDao;
 import com.trx0eth7.model.Data;
-import com.trx0eth7.model.ImplData;
+import com.trx0eth7.server.controller.Settings;
 
-public class StubAbstractDAO extends AbstractDao {
+public class DefaultDao extends AbstractDao {
 
-    public StubAbstractDAO(Settings settings) {
+    public DefaultDao(Settings settings) {
         super(settings);
     }
 
     @Override
     public Data findById(Long id) {
-        return new ImplData(0L);
+        return null;
     }
 
     @Override

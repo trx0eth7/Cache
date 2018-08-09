@@ -1,6 +1,7 @@
-package com.trx0eth7.controller.dao;
+package com.trx0eth7.server.controller.dao;
 
-import com.trx0eth7.controller.Settings;
+import com.sun.istack.internal.Nullable;
+import com.trx0eth7.server.controller.Settings;
 import com.trx0eth7.model.Data;
 
 public abstract class AbstractDao<T extends Data> {
@@ -16,6 +17,7 @@ public abstract class AbstractDao<T extends Data> {
     public abstract void update(T data);
     public abstract void delete(T data);
 
+    @Nullable
     public Settings getSettings() {
         return settings;
     }

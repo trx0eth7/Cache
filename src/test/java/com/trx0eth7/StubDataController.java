@@ -1,7 +1,7 @@
 package com.trx0eth7;
 
-import com.trx0eth7.controller.DataController;
-import com.trx0eth7.controller.dao.AbstractDao;
+import com.trx0eth7.server.controller.DataController;
+import com.trx0eth7.server.controller.dao.AbstractDao;
 
 public class StubDataController extends DataController {
 

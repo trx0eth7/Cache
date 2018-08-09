@@ -1,7 +1,7 @@
-package com.trx0eth7.controller;
+package com.trx0eth7.server.controller;
 
 
-import com.trx0eth7.controller.dao.AbstractDao;
+import com.trx0eth7.server.controller.dao.AbstractDao;
 import com.trx0eth7.model.Data;
 
 public abstract class DataController<T extends Data> {
